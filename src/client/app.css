@@ -1,0 +1,106 @@
+html, body, input {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
+
+@media only screen and (max-width : 600px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+a {
+  color: rgba(0,0,0,0.87) !important;
+}
+
+.sidenav {
+  overflow-y: scroll;
+}
+
+.cocktail-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  margin-bottom: 150px;
+  width: auto;
+}
+.cocktail-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.cocktail-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.card-content {
+  position: relative;
+  padding-bottom: 0 !important;
+}
+
+.move-enter {
+  opacity: 0.01;
+  transform: translate(0, 40px);
+}
+
+.move-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 400ms ease-in;
+}
+
+.move-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.move-exit-active {
+  opacity: 0.01;
+  transform: translate(0, -40px);
+  transition: all 400ms ease-in;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 400ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: all 400ms ease-in;
+}
+
+.height-enter, .height-exit-active, .height-exit-done {
+  max-height: 0 !important;
+  transition: all 800ms ease-in;
+}
+
+.height-exit, .height-enter-active, .height-enter-done {
+  max-height: 1000px !important;
+  transition: all 800ms ease-in;
+}
