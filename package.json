@@ -4,6 +4,7 @@
   "description": "Cocktail disovery and recipe application built using React, Node.js and Express with data via the CocktailDB API.",
   "main": "src/server/index.js",
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "build": "webpack --mode production",
     "start": "npm run build && node src/server/index.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
